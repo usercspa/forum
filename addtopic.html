@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add shortcut icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.com/223772dc-cee2-4fe2-bd98-462cdee120d0%2Fshortcut.ico?v=1609672871456"
+      sizes="16x16"
+    />
+    <!-- add font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+    />
+    <title>Add a Topic</title>
+    <style>
+    h1 {
+      font-size: 40px;
+      font-family: cookie, arial;
+      text-align: center;
+      padding: 10px;
+      top: 10px;
+    }
+
+    form {
+      margin-left: auto;
+      margin-right:auto;
+      width: 15%;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: arial;
+    }
+
+    .button {
+      border: 1px;
+      border-radius: 8px;
+      background-color: #2832C2;
+      color: #FFFFFF;
+      padding: 10px;
+    }
+
+     .button:hover {
+      border: 1px;
+      border-radius: 8px;
+      background-color: #2832C2;
+      color: #FFFFFF;
+      padding: 10px;
+      box-shadow: 1px 1px #C4C4C4;
+    }
+
+    .field {
+      width: 250px;
+      border-radius: 8px;
+      background-color: #82EEFD;
+    }
+    </style>
+  </head>
+  <body>
+  <h1>Add a Topic</h1>
+  <form method=post action="do_addtopic.html">
+    <p><strong>Name:</strong><br>
+    <input type="text" name="topic_owner" size=40 class="field" maxlength=150>
+    <p><strong>Title:</strong><br>
+    <input type="text" name="topic_title" size=40 class="field" maxlength=150>
+    <P><strong>Content:</strong><br>
+    <textarea name="post_text" rows=8 cols=40 class="field" wrap=virtual></textarea>
+   <P><input type="submit" name="submit" class="button" value="Add Topic"></p>
+  </form>
+  </body>
+</html> 

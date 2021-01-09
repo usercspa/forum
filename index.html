@@ -1,1 +1,68 @@
-<div id="app"></div>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add shortcut icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.com/223772dc-cee2-4fe2-bd98-462cdee120d0%2Fshortcut.ico?v=1609672871456"
+      sizes="16x16"
+    />
+    <!-- add font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+    />
+    <title>Aspire For Her Forum</title>
+    <style>
+      .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
+
+      .addTopic {
+        border: 1px;
+        box-shadow: 3px 3px #888888;
+        border-radius: 8px;
+        background-color: #2832C2;
+        color: #FFFFFF;
+        margin-left: 24px;
+        padding: 10px;
+      }
+
+      .topics {
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 10px;
+      }
+
+      .topicheading {
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 10px;
+        background-color: #00CCFF;
+        font-family: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://cdn.glitch.com/223772dc-cee2-4fe2-bd98-462cdee120d0%2Flogo.png?v=1609672878741"
+        class="logo"
+      />
+    </div>
+
+    <br />
+    <a href="/addtopic.html"><button class="addTopic">Add a topic</button></a>
+
+    <h1 class="topicheading">
+      Topics
+    </h1>
+    <!--show topics-->
+    <div class="topics"></div>
+  </body>
+</html>
